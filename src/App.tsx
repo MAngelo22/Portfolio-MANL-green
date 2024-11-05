@@ -11,6 +11,7 @@ import SoftSkill from './components/SoftSkill';
 import Proyectos from './components/Proyectos';
 import Footer from './components/Footer'; 
 import MatrixEffect from './components/MatrixEffect';
+import Aditional from './components/datosinteres';
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -58,6 +59,9 @@ function App() {
 
       {/* Soft Skills Section */}
       <SoftSkill />
+
+      {/* Additional Data Section */}
+      <Aditional />
 
       {/* Contact Section */}
       <Contacto />

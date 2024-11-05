@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Code2, Briefcase, GraduationCap, Languages, Brain, Boxes, Mail } from 'lucide-react';
+import { Plus, Code2, Briefcase, GraduationCap, Languages, Brain, Boxes, Mail } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,6 +45,7 @@ const Navbar = () => {
     { id: 'skills', label: 'Skills', icon: Code2 },
     { id: 'projects', label: 'Projects', icon: Boxes },
     { id: 'soft-skills', label: 'Soft Skills', icon: Brain },
+    { id: 'additional-data', label: 'Additional Data', icon: Plus },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];
 

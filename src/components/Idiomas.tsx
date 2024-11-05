@@ -46,7 +46,7 @@ export default function Idiomas() {
             img={portugal} 
             title="Portuguese"
             level="Basic"
-            progress={70}
+            progress={15}
           />
         </div>
       </div>

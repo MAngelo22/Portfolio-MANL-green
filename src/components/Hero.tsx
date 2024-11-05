@@ -40,7 +40,7 @@ export default function Home() {
                         Junior Software Engineer
                     </h2>
                     <a
-                        href="https://media.licdn.com/dms/document/media/D4D2DAQFTbrjf88f3wg/profile-treasury-document-pdf-analyzed/0/1729704391978?e=1731542400&v=beta&t=xCYyRFiZaJHntfAGOe4j05NdwLr9X0Flp-xuXwW1OLo"
+                        href="https://media.licdn.com/dms/document/media/D4D2DAQE4jR8JoYacCg/profile-treasury-document-pdf-analyzed/0/1730813276906?e=1731542400&v=beta&t=oxonvv1v_oJx1BsdancyiZiYuUfGKtfWx_DFbPDhaOs"
                         download
                         className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full flex items-center gap-2 mx-auto transition-all hover:scale-105 shadow-lg"
                         aria-label="Descargar CV"

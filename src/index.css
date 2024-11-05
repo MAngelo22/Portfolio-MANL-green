@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Asegúrate de que el canvas no capture eventos de ratón */
+}
+
+.canvas-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ocupar todo el ancho de la vista */
+  height: 100vh; /* Ocupar toda la altura de la vista */
+  z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-900;
+  }
+}
+
+@layer components {
+  .bg-pattern {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* Tamaño del patrón */
+  }
+
+  .glass-effect {
+    @apply bg-gray-900/80 backdrop-blur-md border border-gray-800/70; /* Aumentar la opacidad de fondo y bordes */
+  }
+
+  .glass-effect-active {
+    @apply bg-emerald-500/90 backdrop-blur-md border border-emerald-400/70; /* Más opaco en estado activo */
+  }
+
+  .glass-effect-hover {
+    @apply bg-gray-800/80 backdrop-blur-md border border-gray-700/70; /* Más opaco en hover */
+  }
+
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.2); /* Aumentar opacidad de fondo */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Añadido box-shadow y background-color */
+  }
+
+  .glass-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3); /* Aumentar opacidad en hover */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-tag {
+    @apply bg-gray-800/60 backdrop-blur-sm border border-gray-700/50; /* Más opaco */
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(52, 211, 153, 0.8);
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.1); /* Añadir fondo en hover */
+    border: 1px solid rgba(52, 211, 153, 0.5); /* Añadir borde en hover */
+  }
+}
+
+/* Nueva clase para el efecto de letras del fondo */
+.matrix-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Asegúrate de que esté detrás */
+}
+
+.matrix-effect canvas {
+  width: 100%; /* Asegúrate de que el canvas ocupe todo el ancho */
+  height: 100%; /* Asegúrate de que el canvas ocupe toda la altura */
+}
+
+/* Añade este estilo CSS para darles forma rectangular */
+.skill-image {
+  width: 100%; /* O establece un tamaño fijo */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Ajusta el borde si lo deseas */
+  object-fit: cover; /* Cubre el área del contenedor */
+}

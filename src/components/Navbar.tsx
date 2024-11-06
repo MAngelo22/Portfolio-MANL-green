@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Code2, Briefcase, GraduationCap, Languages, Brain, Boxes, Mail } from 'lucide-react';
+import { Home, Plus, Code2, Briefcase, GraduationCap, Languages, Brain, Boxes, Mail } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { id: 'home', label: 'Home', icon: null },
+    { id: 'home', label: 'Home', icon: Home },
     { id: 'experience', label: 'Experience', icon: Briefcase },
     { id: 'education', label: 'Education', icon: GraduationCap },
     { id: 'languages', label: 'Languages', icon: Languages },
@@ -53,20 +53,18 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-effect shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center h-16">
-          <div className="hidden md:flex space-x-1">
+          <div className="flex space-x-4">
             {navItems.map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`px-4 py-2 rounded-full transition-all transform hover:scale-105 ${
-                  activeSection === id
-                    ? 'border-4 border-emerald-500 shadow-lg shadow-emerald-500/80 text-white'
-                    : 'text-gray-300 hover:text-white hover:glass-effect-hover'
-                }`}
+                className={`relative px-4 py-2 rounded-full transition-all duration-300 transform group
+                  ${activeSection === id ? 'border-4 border-emerald-500 shadow-lg shadow-emerald-500/80 text-white' : 'text-gray-300 hover:text-white'}`}
               >
                 <span className="flex items-center gap-2">
-                  {Icon && <Icon size={16} />}
-                  {label}
+                  {/* Ícono */}
+                  {Icon && <Icon size={24} />}
+                  
                 </span>
               </button>
             ))}

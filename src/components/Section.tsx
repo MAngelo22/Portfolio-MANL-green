@@ -3,13 +3,13 @@ import React, { ReactNode } from 'react';
 interface SectionProps {
   id: string;
   icon: ReactNode;
-  title: string;
+  title: ReactNode; // Cambiado a ReactNode para permitir elementos de React
   children: ReactNode;
 }
 
 const Section: React.FC<SectionProps> = ({ id, icon, title, children }) => {
   return (
-    <section id={id} className="py-20">
+    <section id={id} className="py-20 relative z-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center gap-3 mb-12">
           <div className="text-emerald-500">

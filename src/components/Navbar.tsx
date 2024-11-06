@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Code2, Briefcase, GraduationCap, Languages, Brain, Boxes, Mail } from 'lucide-react';
+import { Plus, Code2, Briefcase, GraduationCap, Languages, Brain, Boxes, Mail } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,13 +45,12 @@ const Navbar = () => {
     { id: 'skills', label: 'Skills', icon: Code2 },
     { id: 'projects', label: 'Projects', icon: Boxes },
     { id: 'soft-skills', label: 'Soft Skills', icon: Brain },
+    { id: 'additional-data', label: 'Additional Data', icon: Plus },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-effect shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center h-16">
           <div className="hidden md:flex space-x-1">
@@ -61,8 +60,8 @@ const Navbar = () => {
                 onClick={() => scrollToSection(id)}
                 className={`px-4 py-2 rounded-full transition-all transform hover:scale-105 ${
                   activeSection === id
-                    ? 'bg-emerald-500 text-white'
-                    : 'text-gray-300 hover:text-white hover:bg-gray-800'
+                    ? 'border-4 border-emerald-500 shadow-lg shadow-emerald-500/80 text-white'
+                    : 'text-gray-300 hover:text-white hover:glass-effect-hover'
                 }`}
               >
                 <span className="flex items-center gap-2">

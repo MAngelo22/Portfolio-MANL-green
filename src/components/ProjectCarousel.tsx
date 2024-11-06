@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// ProjectCarousel.js
+import React, { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 
@@ -7,6 +8,8 @@ interface Project {
   description: string;
   image: string;
   tags: string[];
+  github?: string;
+  live: string;
 }
 
 interface ProjectCarouselProps {
@@ -15,6 +18,7 @@ interface ProjectCarouselProps {
 
 const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
 
   const nextProject = () => {
     setCurrentIndex((prev) => (prev + 1) % projects.length);
@@ -24,8 +28,30 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
     setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        prevProject();
+      } else if (event.key === 'ArrowRight') {
+        nextProject();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  useEffect(() => {
+    const interval = isHovering ? null : setInterval(nextProject, 5000);
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isHovering]);
+
   return (
-    <div className="relative w-full py-12">
+    <div className="w-full py-12 relative z-10">
       <div className="overflow-hidden">
         <div className="relative h-[500px] mx-auto max-w-4xl">
           {projects.map((project, index) => {
@@ -72,14 +98,18 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
 
       <button
         onClick={prevProject}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-emerald-500 p-3 rounded-full text-white shadow-lg transition-all hover:bg-emerald-600 hover:scale-110 z-10"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-red-500 bg-opacity-70 px-6 py-2 rounded-full text-white shadow-lg transition-all hover:bg-red-600 hover:scale-110 z-10"
         aria-label="Previous project"
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={nextProject}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-emerald-500 p-3 rounded-full text-white shadow-lg transition-all hover:bg-emerald-600 hover:scale-110 z-10"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-blue-500 bg-opacity-70 px-6 py-2 rounded-full text-white shadow-lg transition-all hover:bg-blue-600 hover:scale-110 z-10"
         aria-label="Next project"
       >
         <ChevronRight size={24} />

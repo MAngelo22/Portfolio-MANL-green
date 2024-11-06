@@ -11,13 +11,21 @@ const SocialLinks = () => {
     },
     {
       icon: Linkedin,
+<<<<<<< HEAD
       href: '#',
+=======
+      href: 'https://www.linkedin.com/in/miguelangelnunezlopez/',
+>>>>>>> master
       label: 'LinkedIn',
       color: 'hover:bg-blue-600'
     },
     {
       icon: Github,
+<<<<<<< HEAD
       href: '#',
+=======
+      href: 'https://github.com/MAngelo22',
+>>>>>>> master
       label: 'GitHub',
       color: 'hover:bg-gray-600'
     }

@@ -12,7 +12,7 @@ const projects = [
       "https://i.ytimg.com/vi/F06lrLMFiK0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEOGqr5ZlH0sMq2hxBkiKg_1u5cA",
     tags: ["React", "Three.js", "TypeScript", "Blender"],
     github: "", // Asegúrate de incluir este enlace si es necesario
-    live: "https://youtu.be/F06lrLMFiK0",
+    live: "https://manl3d.netlify.app",
   },
   {
     title: "HandGame",

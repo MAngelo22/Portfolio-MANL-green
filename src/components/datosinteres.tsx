@@ -48,11 +48,11 @@ export default function AdditionalData() {
           <div className="flex justify-center items-center mb-4">
             <Plus className="w-8 h-8 text-emerald-500 mr-3" />
             <h2 className="text-4xl font-bold gradient-text">
-              Datos Adicionales
+              Additional Information
             </h2>
           </div>
           <p className="text-xl text-gray-400 mt-2">
-            Experiencia y habilidades adicionales
+            Additional experience and skills
           </p>
         </motion.div>
 

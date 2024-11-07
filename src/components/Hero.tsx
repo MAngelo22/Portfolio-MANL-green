@@ -50,7 +50,7 @@ export default function Home() {
                         aria-label="Abrir enlace del CV"
                     >
                         <Download size={20} />
-                        Descargar CV
+                        Download CV
                     </button>
                 </div>
             </div>

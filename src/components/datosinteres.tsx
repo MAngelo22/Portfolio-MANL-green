@@ -25,7 +25,7 @@ const additionalData = [
     icon: <Award size={24} className="icon-size text-emerald-500" />,
     title: "Private Security Training",
     year: "2018",
-    description: "Training in positive reinforcement-based education",
+    description: "Training as a private security guard and bodyguard",
   },
   {
     icon: <Car size={24} className="icon-size text-emerald-500" />,

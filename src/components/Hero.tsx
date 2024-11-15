@@ -14,7 +14,7 @@ export default function Home() {
     const handleOpenLink = () => {
         // Abre el enlace en una nueva pestaña
         window.open(
-            "https://media.licdn.com/dms/document/media/D4D2DAQG-_MDb4hkKig/profile-treasury-document-pdf-analyzed/0/1731675818862?e=1732752000&v=beta&t=OLhx0AAtBLQ2Bxm3e-eRVvUuBjNZFXVnyl_nonpYWVc",
+            src="../media/CVmanl2.pdf",
             "_blank" // Este atributo indica que se debe abrir en una nueva pestaña
         );
     };

@@ -14,7 +14,7 @@ export default function Home() {
     const handleOpenLink = () => {
         // Abre el enlace en una nueva pestaña
         window.open(
-            "../media/CV/CVmanl2.pdf",
+            "https://c6eee4e2-ae74-4b61-a81c-7857a19eae24.usrfiles.com/ugd/c6eee4_01b9baef69f044e681c381e1a3d970d8.pdf",
             "_blank" // Este atributo indica que se debe abrir en una nueva pestaña
         );
     };

@@ -14,7 +14,7 @@ export default function Home() {
     const handleOpenLink = () => {
         // Abre el enlace en una nueva pestaña
         window.open(
-            "https://media.licdn.com/dms/document/media/D4D2DAQE4jR8JoYacCg/profile-treasury-document-pdf-analyzed/0/1730813276906?e=1731542400&v=beta&t=oxonvv1v_oJx1BsdancyiZiYuUfGKtfWx_DFbPDhaOs",
+            "https://media.licdn.com/dms/document/media/D4D2DAQG-_MDb4hkKig/profile-treasury-document-pdf-analyzed/0/1731675818862?e=1732752000&v=beta&t=OLhx0AAtBLQ2Bxm3e-eRVvUuBjNZFXVnyl_nonpYWVc",
             "_blank" // Este atributo indica que se debe abrir en una nueva pestaña
         );
     };

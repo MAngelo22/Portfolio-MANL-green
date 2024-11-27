@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "Doers DF",
     position: "Web Developer",
-    period: "Sep 2024 - Present",
+    period: "Sep 2024 - Nov 2024",
     description: "Junior Web Page Developer Position",
     technologies: [
       "React",

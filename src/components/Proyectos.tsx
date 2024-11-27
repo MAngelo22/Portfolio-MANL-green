@@ -9,7 +9,7 @@ const projects = [
     description:
       "Interactive 3D portfolio showing projects in a virtual gallery using Three.js and React Three Fiber",
     image:
-      "https://i.ytimg.com/vi/F06lrLMFiK0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEOGqr5ZlH0sMq2hxBkiKg_1u5cA",
+      "https://static.wixstatic.com/media/c6eee4_68edbd0187ae496da8a16ce561bcb1ca~mv2.webp",
     tags: ["React", "Three.js", "TypeScript", "Blender"],
     github: "", // Asegúrate de incluir este enlace si es necesario
     live: "https://manl3d.netlify.app",
@@ -19,7 +19,7 @@ const projects = [
     description:
       "Website designed so that you can interactively play classic games against the machine",
     image:
-      "https://i.ytimg.com/vi/0iOtOFw-e7o/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAApIFigIMCAAQARgkIFkocjAP&rs=AOn4CLDiyF5PJ047Zs6ToXtm_wjdCfPGIQ",
+      "https://static.wixstatic.com/media/c6eee4_e12c4b309eef48a093129e3328ef6e9f~mv2.webp",
     tags: ["HTML", "JS", "CSS"],
     github: "https://github.com/MAngelo22/HANDgame.git",
     live: "https://gamesclassic.netlify.app/piedra2",
@@ -29,7 +29,7 @@ const projects = [
     description:
       "Website designed to generate motorcycle maintenance data according to the model",
     image:
-      "https://i.ytimg.com/vi/6ughobPjAeI/oar2.jpg?sqp=-oaymwEdCIUFENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCN7ZU0VZdvzXWC9qThUnw93sGzrQ",
+      "https://static.wixstatic.com/media/c6eee4_97da5bfb6c3c43bd9936b427b4eb1211~mv2.png",
     tags: ["HTML", "JS", "CSS"],
     github: "https://github.com/MAngelo22/Motenimiento.git",
     live: "https://www.youtube.com/shorts/6ughobPjAeI",
@@ -39,7 +39,7 @@ const projects = [
     description:
       "Website designed to reserve paddle tennis courts in an urbanization",
     image:
-      "https://i.ytimg.com/vi/BuNRfIk7z44/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAApIFigIMCAAQARhlIFIoRTAP&rs=AOn4CLAIiKg2cXpsqHhYQRaPmrDw8raJTA",
+      "https://static.wixstatic.com/media/c6eee4_852cc341de164daf8dfd9f7eabaac264~mv2.webp",
     tags: ["HTML", "JS", "CSS"],
     github: "https://github.com/MAngelo22/Redel.git", // Asegúrate de incluir este enlace si es necesario
     live: "https://www.youtube.com/watch?v=BuNRfIk7z44",
@@ -49,7 +49,7 @@ const projects = [
     description:
       "App on Android, through which your device was geolocated to find the protector",
     image:
-      "https://i.ytimg.com/vi/6B9bn7RxE7k/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3AGAAuADigIMCAAQARhyIFEoPTAP&rs=AOn4CLDQKb9-fPTZQVGkaesEc5S5FMihnw",
+      "https://static.wixstatic.com/media/c6eee4_f2e8d28d94084b39b27261e2dad1f293~mv2.webp",
     tags: ["Android", "Java", "API Google Maps", "Android Studio"],
     github: "https://github.com/MAngelo22/QRastreo-TFG.git",
     live: "https://www.youtube.com/watch?v=6B9bn7RxE7k",
@@ -58,7 +58,7 @@ const projects = [
     title: "Juego 3D",
     description: "I play recreating the ITT where I studied, in first person",
     image:
-      "https://i.ytimg.com/vi/E7xc8kuUAeQ/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBhAmAAtAFigIMCAAQARhlIFgoVjAP&rs=AOn4CLD_w1qmTyRsvBQofYgXX-gtHriREg",
+      "https://static.wixstatic.com/media/c6eee4_d9e84b3abbf344faa343a7d7d897d419~mv2.png",
     tags: ["Unity", "Java", "C#", "PhotoShop"],
     github: "", // Asegúrate de incluir este enlace si es necesario
     live: "https://www.youtube.com/watch?v=E7xc8kuUAeQ&t=34s",
@@ -68,7 +68,7 @@ const projects = [
     description:
       "Game based on 'The Avengers', rigging characters from static assets",
     image:
-      "https://i.ytimg.com/vi/r-VIGDOk2UU/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAsoFigIMCAAQARh_IBMoFDAP&rs=AOn4CLBbT-sO1Pz3NP831sLdrKtyhtUhew",
+      "https://static.wixstatic.com/media/c6eee4_0328f5b5909f435fbedeeb28ecdd952a~mv2.png",
     tags: ["Unity", "Java", "C#", "PhotoShop"],
     github: "", // Asegúrate de incluir este enlace si es necesario
     live: "https://www.youtube.com/watch?v=r-VIGDOk2UU&t=2s",

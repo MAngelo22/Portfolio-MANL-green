@@ -42,7 +42,7 @@ export default function Home() {
                         Miguel Ángel <span className="text-emerald-500 mt-2 block">Núñez López</span>
                     </h1>
                     <h2 className="text-xl md:text-2xl text-gray-400 mb-6">
-                        Junior Software Engineer
+                        Web Developer Full Stack
                     </h2>
                     <button
                         onClick={handleOpenLink}

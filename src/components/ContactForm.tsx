@@ -43,7 +43,7 @@ const ContactForm = () => {
     <div className="max-w-lg mx-auto space-y-6">
       {messageSent && (
         <div className="bg-green-500 text-white px-4 py-2 rounded-lg text-center">
-          ¡Mensaje enviado con éxito!
+          ¡Message sent successfully!
         </div>
       )}
       

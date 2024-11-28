@@ -1,8 +1,19 @@
 import React from 'react';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github , Codesandbox, Pi} from 'lucide-react';
 
 const SocialLinks = () => {
   const links = [
+    {
+      icon: Codesandbox,
+      href: 'https://www.linkedin.com/in/miguelangelnunezlopez/',
+      label: 'Web 3D',
+      color: 'hover:bg-violet-300'
+    },{
+      icon: Pi,
+      href: 'https://www.linkedin.com/in/miguelangelnunezlopez/',
+      label: '3D Web',
+      color: 'hover:bg-lime-500'
+    },
     {
       icon: Mail,
       href: 'mailto:miguelangel.developer@gmail.com',

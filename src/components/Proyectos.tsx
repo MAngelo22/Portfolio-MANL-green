@@ -13,6 +13,15 @@ const projects = [
     tags: ["React", "Three.js", "TypeScript", "Blender"],
     github: "", // Asegúrate de incluir este enlace si es necesario
     live: "https://manl3d.netlify.app",
+  },{
+    title: "3D Mantrix",
+    description:
+      "Interactive 3D portfolio showing projects in a virtual gallery using Three.js and React Three Fiber",
+    image:
+      "https://static.wixstatic.com/media/c6eee4_fd2eaa26ff09443b8e406972afb6cf84~mv2.png",
+    tags: ["React", "Three.js", "TypeScript", "Blender"],
+    github: "https://github.com/MAngelo22/MANTRIX-Porfolio-3D", // Asegúrate de incluir este enlace si es necesario
+    live: "https://mantrix.netlify.app/",
   },
   {
     title: "HandGame",

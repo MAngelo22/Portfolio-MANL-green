@@ -5,12 +5,12 @@ const SocialLinks = () => {
   const links = [
     {
       icon: Codesandbox,
-      href: 'https://www.linkedin.com/in/miguelangelnunezlopez/',
+      href: 'https://manl3d.netlify.app/',
       label: 'Web 3D',
       color: 'hover:bg-violet-300'
     },{
       icon: Pi,
-      href: 'https://www.linkedin.com/in/miguelangelnunezlopez/',
+      href: 'https://mantrix.netlify.app/',
       label: '3D Web',
       color: 'hover:bg-lime-500'
     },

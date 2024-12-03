@@ -38,14 +38,14 @@ export default function Idiomas() {
             className="hover-glow"
             img={inglesa} 
             title="English"
-            level="Professional"
+            level="Professional - B1"
             progress={70}
           />
           <SkillCard
             className="hover-glow"
             img={portugal} 
             title="Portuguese"
-            level="Basic"
+            level="Basic - A1"
             progress={15}
           />
         </div>
